@@ -167,7 +167,7 @@ for(int i=0; i<n;i++){
 */
 
 //cumulative sum approach//
-#include<iostream>
+/* #include<iostream>
 #include<climits>
 using namespace std;
 int main(){
@@ -194,4 +194,46 @@ for(int i=1; i<=n;i++){
 }
 cout<<maxSum<<endl;
     return 0;
+}*/
+//maximum subarray sum//kadane's algorithm//
+#include<iostream>
+#include<climits>
+using namespace std;
+int main(){
+int n;
+cin>>n;
+int arr[n];
+for(int i=0;i<n;i++){
+    cin>>arr[i];
 }
+int currentsum=0;
+int maxSum=INT16_MIN;
+for(int i=0;i<n;i++){
+
+    currentsum+=arr[i];
+    if(currentsum<0){
+        currentsum=0;
+
+    }
+    maxSum=max(maxSum,currentsum);
+}
+cout<<maxSum<<endl;
+ return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
