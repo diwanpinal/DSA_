@@ -290,7 +290,7 @@ cout<<pairsum(arr,8,k)<<endl;
 }
 */
 //pair sum problem//linear traverse//
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 
 bool pairsum(int arr[],int n,int k){
@@ -314,7 +314,7 @@ int k=31;
 cout<<pairsum(arr,8,k)<<endl;
     return 0;
 }
-
+*/
 
 
 
