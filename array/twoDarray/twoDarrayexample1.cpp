@@ -82,7 +82,7 @@ else{
 } 
 */
 //spiral_order_traversal
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 int main(){
 int n ,m;
@@ -122,4 +122,45 @@ while(row_start<=row_end && column_start<=column_end){
 
  return 0;
 }
+*/
 
+//matrices_questions//matrix_transpose(row=col)// //for printinr element above diagonal//
+
+#include<iostream>
+using namespace std;
+int main(){
+int n,m;
+cin>>n>>m;
+int a[n][m];
+for(int i=0;i<n;i++){
+    for(int j=0;j<m;j++){
+        cin>>a[i][j];
+    }
+}
+
+cout<<"the original matrix:"<<endl;
+for(int i=0;i<n;i++){
+    for(int j=0;j<m;j++){
+        cout<<a[i][j]<<" ";
+    }cout<<"\n";
+}
+
+for(int i=0;i<n;i++){
+   for(int j=i;j<m;j++) {
+     int temp=a[i][j];
+     a[i][j]=a[j][i];
+     a[j][i]=temp;
+
+   } 
+
+}
+cout<<"the transpose matrix:"<<endl;
+
+for(int i=0;i<3;i++){
+    for(int j=0;j<3;j++){
+        cout<<a[i][j]<<" ";
+    }cout<<"\n";
+}
+
+return 0;
+}
