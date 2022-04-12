@@ -208,7 +208,9 @@ for(int i=0;i<n1;i++){
     return 0;
 }
 */
+
 //matrix search//
+/*
 #include<iostream>
 using namespace std;
 int main(){
@@ -252,6 +254,65 @@ else{
 
    return 0;
 }
+*/
+//character array//
+/*
+#include<iostream>
+using namespace std ;
+int main(){
+char a[100]="hello";
+int i=0;
+while(a[i] != '\0'){
+    cout<<a[i]<<endl;
+    i++;
+}
+    return 0;
+}
+
+*///charcter array //
+
+#include<iostream>
+using namespace std ;
+int main(){
+char a[100];
+cin>>a;
+cout<<a[4];
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
