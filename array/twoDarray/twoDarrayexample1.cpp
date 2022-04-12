@@ -281,6 +281,7 @@ cout<<a[4];
 }
 */
 //checking palindrome//
+/*
 #include<iostream>
 using namespace std ;
 int main(){
@@ -292,6 +293,7 @@ bool check= true;
 for(int i=0;i<n;i++){
     if(arr[i]!=arr[n-1-i]){
         check=false;
+        break;
     }
 }
 if(check==true){
@@ -301,6 +303,43 @@ if(check==true){
 else{
     cout<<"word is not a palindrome"<<endl;
 }
+    return 0;
+}
+*/
+//largest word in a sentence//
+#include<iostream>
+using namespace std ;
+int main(){
+    int n;
+    cin>>n;
+    cin.ignore(); //to ignore the buffers//
+    char arr[n+1];
+    cin>>arr;
+    cin.getline(arr,n);  //getline() is used to input a sentence with spaces//
+    cin.ignore();
+    int i=0;
+    int currlen=0, maxlen=0;
+    int st=0,maxst=0;
+    while(true){
+        if(arr[i]==' ' || arr[i]=='\0'){
+
+            if(currlen>maxlen){
+                maxlen=currlen;
+                maxst= st;
+            }
+            currlen=0;
+            st=i+1;
+        }
+         else
+         currlen++;
+        if(arr[i]=='\0')
+        break;
+        i++;
+    }
+    cout<<maxlen<<endl;
+    for(int i=0;i<maxlen;i++){
+        cout<<arr[i+maxst];
+    }
     return 0;
 }
 
