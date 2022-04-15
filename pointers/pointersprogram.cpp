@@ -51,7 +51,7 @@ int main(){
 */
 
 //passing_pointers_to_function//
-
+/*
 #include<iostream>
 using namespace std;
 void swap(int *a, int *b){
@@ -63,8 +63,25 @@ int main(){
 int a=2;
 int b=4;
 
-swap(&a,&b);
+swap(&a,&b); //call_by_refrence//
 cout<<a<<" "<<b<<" "<<endl;
+
+    return 0;
+}
+*/
+//example2
+#include<iostream>
+using namespace std;
+void increment(int *a){
+    int temp =*a;
+    temp++;
+    *a=temp;
+}
+int main(){
+int a=2;
+int *aptr=&a;
+increment(aptr); //call_by_refrence//
+cout<<"a:"<<a<<endl;
 
     return 0;
 }
