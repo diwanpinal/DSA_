@@ -23,6 +23,7 @@ cout<<cptr<<endl;
 
 */
 //pointers_and_arrays
+/*
 #include<iostream>
 using namespace std;
 int main(){
@@ -35,3 +36,15 @@ int main(){
      }
     return 0;
     }
+*/
+//pointers_to_pointers//
+#include<iostream>
+using namespace std;
+int main(){
+    int a=10;
+    int *p=&a;
+    int **q=&p;
+    cout<<**q<<endl;
+    return 0;
+}
+
