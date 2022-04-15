@@ -38,6 +38,7 @@ int main(){
     }
 */
 //pointers_to_pointers//
+/*
 #include<iostream>
 using namespace std;
 int main(){
@@ -47,4 +48,23 @@ int main(){
     cout<<**q<<endl;
     return 0;
 }
+*/
 
+//passing_pointers_to_function//
+#include<iostream>
+using namespace std;
+void swap(int *a, int *b){
+    int temp=*a;
+    *a=*b;
+    *b=temp;
+}
+int main(){
+int a=2;
+int b=4;
+int *aptr=&a;
+int *bptr=&b;
+swap(aptr,bptr);
+cout<<a<<" "<<b<<" "<<endl;
+
+    return 0;
+}
