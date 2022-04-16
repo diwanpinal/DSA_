@@ -69,7 +69,8 @@ cout<<a<<" "<<b<<" "<<endl;
     return 0;
 }
 */
-//example2
+//example2//
+/*
 #include<iostream>
 using namespace std;
 void increment(int *a){
@@ -85,3 +86,4 @@ cout<<"a:"<<a<<endl;
 
     return 0;
 }
+*/

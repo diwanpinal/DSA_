@@ -346,7 +346,48 @@ int main(){
 */
 //
 
+//largestword_using_function//
 
+#include<iostream>
+using namespace std;
+void maxlength(char *a,int n){
+int i=0;
+    int currlen=0, maxlen=0;
+    int st=0,maxst=0;
+    while(true){
+        if(a[i]==' ' || a[i]=='\0'){
+
+            if(currlen>maxlen){
+                maxlen=currlen;
+                maxst= st;
+            }
+            currlen=0;
+            st=i+1;
+        }
+         else
+         currlen++;
+        if(a[i]=='\0')
+        break;
+        i++;
+    }
+    cout<<maxlen<<endl;
+    for(int i=0;i<maxlen;i++){
+        cout<<a[i+maxst];
+    }
+    
+}
+int main(){
+ int n;
+ cin>>n;
+   
+
+char a[n];
+cin>>a;
+cin.getline(a,n);
+maxlength(a,n);
+
+    return 0;
+}
 
 
 
