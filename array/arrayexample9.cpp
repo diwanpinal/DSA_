@@ -1,5 +1,5 @@
 //longest arithmatic sub-array//
-#include<iostream>
+/*#include<iostream>
 #include<climits>
 using namespace std;
 int main(){
@@ -29,3 +29,4 @@ cout<<ans<<endl;
 
     return 0 ;
 }
+*/

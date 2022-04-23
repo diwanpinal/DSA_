@@ -1,5 +1,6 @@
 //dynamic_memory_allocation 
 //stack//
+/*
 #include<iostream>
 using namespace std;
 void func1(int *a,int *b){
@@ -29,5 +30,27 @@ cout<<"a:"<<a<<endl<<"b:"<<b<<endl;
 return 0;
 
 }
+*/
+//heap//
+#include<iostream>
+using namespace std;
+int main(){
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
