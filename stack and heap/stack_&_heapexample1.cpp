@@ -1,6 +1,7 @@
 //dynamic_memory_allocation 
 //stack//
 /*
+in stack memory alloction and delocation is done automatically//
 #include<iostream>
 using namespace std;
 void func1(int *a,int *b){
@@ -32,10 +33,18 @@ return 0;
 }
 */
 //heap//
+//memory allocaton and delocation id done manually//
 #include<iostream>
 using namespace std;
 int main(){
-    return 0;
+ int a=10;
+ int *p=new int();
+ *p=10;
+ delete(p);
+ p=new int[4];
+ delete[]p;
+ p=NULL;
+  return 0;
 }
 
 
