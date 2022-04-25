@@ -36,9 +36,11 @@ cout<<s1+s2<<endl;//without append method//
 #include<string>
 using namespace std;
 int main(){
-string s1="pinal";
-cout<<s1[2]<<endl; //printing_letter_from_string//
-
+//string s1="pinal";
+//cout<<s1[2]<<endl; //printing_letter_from_string//
+string s2="gyjgjhghjbnnnbnbnb";
+s2.clear();
+cout<<s2<<endl;
 
     return 0 ;
 }
