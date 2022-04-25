@@ -49,7 +49,7 @@ cout<<"strings are equal"<<endl;
 else{
     cout<<"strings are not equal"<<endl;
 }
-
+//************************************************8
 string str = "string";
 str.clear();
 if(str.empty()){//using_emptymethod//
@@ -58,24 +58,29 @@ if(str.empty()){//using_emptymethod//
 else{
     cout<<"string is not empty"<<endl;
 }
-
+       //  *************************************************************
 string str="stringexample";
 str.erase(3, 4);//using_erasemethod//erase(from,how many letter)//
 cout<<str<<endl;
-
+    //***********************************************************************
 string s5="stringexample";
 cout<<s5.find("exam")<<endl;//using_findmethod//
 s5.insert(6,"insert");//insertmethod//
 cout<<s5<<endl;
-
+//***********************************************************************
 string str1="stringexample";
 cout<<str1.length()<<endl;//lengthmethod//
 for(int i=0;i<str1.length();i++){
     cout<<str1[i]<<endl;
 }
-*/
+//**********************************************************************
 string str2="stringexample";
 string s= str2.substr(6,7);//substringmethod//
 cout<<s<<endl;
+*/
+string str="123";
+int a= stoi(str);//string_to_integer_conversion
+cout<<a+2<<endl;
+
     return 0 ;
 }
