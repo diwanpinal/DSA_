@@ -38,9 +38,16 @@ using namespace std;
 int main(){
 //string s1="pinal";
 //cout<<s1[2]<<endl; //printing_letter_from_string//
-string s2="gyjgjhghjbnnnbnbnb";
-s2.clear();
-cout<<s2<<endl;
-
+//string s2="gyjgjhghjbnnnbnbnb";
+//s2.clear();
+//cout<<s2<<endl;
+string s3="abc";
+string s4="def";
+if(!s4.compare(s3)){
+cout<<"strings are equal"<<endl;
+}
+else{
+    cout<<"strings are not equal"<<endl;
+}
     return 0 ;
 }
