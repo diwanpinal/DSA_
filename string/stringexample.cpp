@@ -77,10 +77,12 @@ for(int i=0;i<str1.length();i++){
 string str2="stringexample";
 string s= str2.substr(6,7);//substringmethod//
 cout<<s<<endl;
-*/
+///***************************************************************
 string str="123";
 int a= stoi(str);//string_to_integer_conversion
 cout<<a+2<<endl;
-
+*/
+int x=123;
+cout<<to_string(x) +"2"<<endl;//integer_to_string_conversion
     return 0 ;
 }
