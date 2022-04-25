@@ -33,6 +33,7 @@ cout<<s1+s2<<endl;//without append method//
 */
 //playing_with_string//
 #include<iostream>
+#include<algorithm>
 #include<string>
 using namespace std;
 int main(){
@@ -81,8 +82,12 @@ cout<<s<<endl;
 string str="123";
 int a= stoi(str);//string_to_integer_conversion
 cout<<a+2<<endl;
-*/
+//*********************************************************
 int x=123;
 cout<<to_string(x) +"2"<<endl;//integer_to_string_conversion
+*/
+string str= "hkjbbjnmnbuiz";
+sort(str.begin() , str.end());//sorting_string//
+cout<<str<<endl;
     return 0 ;
 }
