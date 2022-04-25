@@ -25,7 +25,8 @@ using namespace std;
 int main(){
 string s1="fam";
 string s2="ily";
-s1.append(s2);//by append method//
-cout<<s1<<endl;
+//s1.append(s2);//by append method//
+
+cout<<s1+s2<<endl;//without append method//
     return 0;
 }
