@@ -64,6 +64,8 @@ str.erase(3, 4);//using_erasemethod//erase(from,how many letter)//
 cout<<str<<endl;
 */
 string s5="stringexample";
-cout<<s5.find("exam")<<endl;//using_findmethod//
+//cout<<s5.find("exam")<<endl;//using_findmethod//
+s5.insert(6,"insert");//insertmethod//
+cout<<s5<<endl;
     return 0 ;
 }
