@@ -49,7 +49,7 @@ cout<<"strings are equal"<<endl;
 else{
     cout<<"strings are not equal"<<endl;
 }
-*/
+
 string str = "string";
 str.clear();
 if(str.empty()){//using_emptymethod//
@@ -58,6 +58,12 @@ if(str.empty()){//using_emptymethod//
 else{
     cout<<"string is not empty"<<endl;
 }
+*/
+string str="stringexample";
+str.erase(3, 4);//using_erasemethod//erase(from,how many letter)//
+cout<<str<<endl;
+
+
 
     return 0 ;
 }
