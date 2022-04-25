@@ -58,12 +58,12 @@ if(str.empty()){//using_emptymethod//
 else{
     cout<<"string is not empty"<<endl;
 }
-*/
+
 string str="stringexample";
 str.erase(3, 4);//using_erasemethod//erase(from,how many letter)//
 cout<<str<<endl;
-
-
-
+*/
+string s5="stringexample";
+cout<<s5.find("exam")<<endl;//using_findmethod//
     return 0 ;
 }
