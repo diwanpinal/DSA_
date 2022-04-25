@@ -62,10 +62,16 @@ else{
 string str="stringexample";
 str.erase(3, 4);//using_erasemethod//erase(from,how many letter)//
 cout<<str<<endl;
-*/
+
 string s5="stringexample";
-//cout<<s5.find("exam")<<endl;//using_findmethod//
+cout<<s5.find("exam")<<endl;//using_findmethod//
 s5.insert(6,"insert");//insertmethod//
 cout<<s5<<endl;
+*/
+string str1="stringexample";
+cout<<str1.length()<<endl;//lengthmethod//
+for(int i=0;i<str1.length();i++){
+    cout<<str1[i]<<endl;
+}
     return 0 ;
 }
