@@ -19,7 +19,7 @@ cout<<str3<<endl;
 }
 */
 //concatenation_of_strings//
-#include<iostream>
+/*#include<iostream>
 #include<string>
 using namespace std;
 int main(){
@@ -29,4 +29,16 @@ string s2="ily";
 
 cout<<s1+s2<<endl;//without append method//
     return 0;
+}
+*/
+//playing_with_string//
+#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+string s1="pinal";
+cout<<s1[2]<<endl; //printing_letter_from_string//
+
+
+    return 0 ;
 }
