@@ -41,13 +41,23 @@ int main(){
 //string s2="gyjgjhghjbnnnbnbnb";
 //s2.clear();
 //cout<<s2<<endl;
-string s3="abc";
+/*string s3="abc";
 string s4="def";
-if(!s4.compare(s3)){
+if(!s4.compare(s3)){//comparing_strings//
 cout<<"strings are equal"<<endl;
 }
 else{
     cout<<"strings are not equal"<<endl;
 }
+*/
+string str = "string";
+str.clear();
+if(str.empty()){//using_emptymethod//
+    cout<<"string is empty"<<endl;
+}
+else{
+    cout<<"string is not empty"<<endl;
+}
+
     return 0 ;
 }
