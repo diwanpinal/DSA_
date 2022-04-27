@@ -1,5 +1,6 @@
 
 //conversion_uppercase_lowercase//
+/*
 #include<iostream>
 #include<string>
 #include<algorithm>
@@ -22,9 +23,19 @@ cout<<str<<endl;
 }
 cout<<str<<endl;
    
-
-
-
-
-    return 0;
+ return 0;
+}
+*/
+//conversion_uppercase_lowercase_using_transformmethod//
+#include<iostream>
+#include<string>
+#include<algorithm>
+using namespace std;
+int main(){
+string s= "abcdefghijkm";
+transform(s.begin(), s.end(), s.begin(),::toupper);
+cout<<s<<endl;
+transform(s.begin(), s.end(), s.begin(),::tolower);
+cout<<s<<endl;
+return 0;
 }
