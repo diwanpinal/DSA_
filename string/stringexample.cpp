@@ -32,17 +32,20 @@ cout<<s1+s2<<endl;//without append method//
 }
 */
 //playing_with_string//
+/*
 #include<iostream>
 #include<algorithm>
 #include<string>
 using namespace std;
 int main(){
-//string s1="pinal";
-//cout<<s1[2]<<endl; //printing_letter_from_string//
-//string s2="gyjgjhghjbnnnbnbnb";
-//s2.clear();
-//cout<<s2<<endl;
-/*string s3="abc";
+string s1="pinal";
+cout<<s1[2]<<endl; //printing_letter_from_string//
+//*************************************************************
+string s2="gyjgjhghjbnnnbnbnb";
+s2.clear();//clearmethod//
+cout<<s2<<endl;
+//**************************************************
+string s3="abc";
 string s4="def";
 if(!s4.compare(s3)){//comparing_strings//
 cout<<"strings are equal"<<endl;
@@ -85,9 +88,10 @@ cout<<a+2<<endl;
 //*********************************************************
 int x=123;
 cout<<to_string(x) +"2"<<endl;//integer_to_string_conversion
-*/
+//******************************************************
 string str= "hkjbbjnmnbuiz";
 sort(str.begin() , str.end());//sorting_string//
 cout<<str<<endl;
     return 0 ;
 }
+*/
