@@ -33,9 +33,20 @@ cout<<str<<endl;
 using namespace std;
 int main(){
 string s= "abcdefghijkm";
-transform(s.begin(), s.end(), s.begin(),::toupper);
+for(int i=5; i<s.size();i++){
+    if(s[i]>='a' && s[i]<='z'){ //for uppercase//as ascii difference of 'a' and 'A' is 32//
+        s[i] -=32;
+       
+    }
+
+}
 cout<<s<<endl;
-transform(s.begin(), s.end(), s.begin(),::tolower);
-cout<<s<<endl;
+//transform(s.begin(), s.end(), s.begin(),::toupper);
+//cout<<s<<endl;
+//transform(s.begin(), s.end(), s.begin(),::tolower);
+//cout<<s<<endl;
+
+
+
 return 0;
 }
