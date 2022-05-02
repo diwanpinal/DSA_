@@ -46,13 +46,11 @@ cout<<s<<endl;
 //cout<<s<<endl;
 //transform(s.begin(), s.end(), s.begin(),::tolower);
 //cout<<s<<endl;
-
-
-
 return 0;
 }
 */
 //greatest_numaric_string//
+/*
 #include<iostream>
 #include<string>
 #include<algorithm>
@@ -63,7 +61,36 @@ int main(){
     cout<<s<<endl;
     return 0;
 }
+*/
+//maximum_occurance_char_instring//
+#include<iostream>
+#include<string>
+#include<algorithm>
+using namespace std;
+int main(){
+    string s="ugshbnbsbhjbnmbm";
+    int freq[26];
+    for(int i=0;i<26;i++){
+        freq[i]=0;
+    }
+    for(int i=0; i<s.size();i++){
+        freq[s[i]-'a']++;
+    }
+   char ans='a';
+   int maxF= 0;
+   for(int i=0;i<26;i++){
+       if(freq[i]>=maxF){
+           maxF= freq[i];
+           ans= i+'a';
 
+       }
+   }
+
+cout<<maxF<<" "<<ans<<endl;
+
+    return 0;
+
+}
 
 
 
