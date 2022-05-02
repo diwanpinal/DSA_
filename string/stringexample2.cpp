@@ -27,13 +27,14 @@ cout<<str<<endl;
 }
 */
 //conversion_uppercase_lowercase_using_transformmethod//
+/*
 #include<iostream>
 #include<string>
 #include<algorithm>
 using namespace std;
 int main(){
 string s= "abcdefghijkm";
-for(int i=5; i<s.size();i++){
+for(int i=5; i<s.size();i++){//converting lowercase into uppercase in middle of string
     if(s[i]>='a' && s[i]<='z'){ //for uppercase//as ascii difference of 'a' and 'A' is 32//
         s[i] -=32;
        
@@ -50,3 +51,25 @@ cout<<s<<endl;
 
 return 0;
 }
+*/
+//greatest_numaric_string//
+#include<iostream>
+#include<string>
+#include<algorithm>
+using namespace std;
+int main(){
+    string s= "35647565698";
+    sort(s.begin(),s.end(), greater<int>());
+    cout<<s<<endl;
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
